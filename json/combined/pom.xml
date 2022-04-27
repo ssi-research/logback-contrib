@@ -21,15 +21,21 @@
   </parent>
 
     <modelVersion>4.0.0</modelVersion>
-    <artifactId>logback-json-core</artifactId>
-    <name>Logback Contrib :: JSON :: Core</name>
+    <artifactId>logback-json-combined</artifactId>
+    <name>Logback Contrib :: JSON :: Combined</name>
     <packaging>jar</packaging>
 
-    <dependencies>
-      <dependency>
-        <groupId>ch.qos.logback</groupId>
-        <artifactId>logback-core</artifactId>
-      </dependency>
-    </dependencies>
+  <dependencies>
+    <dependency>
+      <groupId>ch.qos.logback</groupId>
+      <artifactId>logback-classic</artifactId>
+      <version>${logback.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>ch.qos.logback.contrib</groupId>
+      <artifactId>logback-json-core</artifactId>
+      <version>${project.version}</version>
+    </dependency>
+  </dependencies>
 
 </project>
